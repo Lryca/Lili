@@ -1,0 +1,1 @@
+worker:python Lili_bot.py
