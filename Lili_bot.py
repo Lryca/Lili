@@ -1,6 +1,5 @@
 import discord
 import random
-import asyncio
 import time
 import numpy as np
 
