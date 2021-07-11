@@ -292,4 +292,4 @@ if __name__ == "__main__":
     # 객체를 생성
     client = chatbot()
     # TOKEN 값을 통해 로그인하고 봇을 실행
-    client.run("ODE3MzU2MzA2NTQ0OTg0MDk2.YEIUYQ.zdTdhDFrNjlQhDY7LU_M3na7j20")
+    client.run("ODE3MzU2MzA2NTQ0OTg0MDk2.YEIUYQ.dx9cDmBFD-tIWFQ21-_k0_5qPm4")
