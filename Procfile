@@ -1,1 +1,1 @@
-worker: python Lili_bot.py
+worker: python bot.py
