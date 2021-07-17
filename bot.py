@@ -54,19 +54,18 @@ class chatbot(discord.Client):
             msg = "그.. 주시면 감사히받을게요냥"
             await channel.send(msg)
             return None
-
-        if message.content == "리리야 서버어때?":
-            channel = message.channel
-            msg = "이름이 왜저래요??"
-            await channel.send(msg)
-            return None
-
         
         if message.content == "리리야 고고가 누구야?":
             channel = message.channel
             msg = "구제불능인 저희 오빠에요냥.. 좀 이상한 말 해도 참아주세요."
             await channel.send(msg)
             return None
+
+        if message.content == "리리야 유유가 누구야?":
+            channel =  message.channel
+            msg="책을 좋아하는 남동생이에요냥 너무 활발해서 탈이에요."
+            await channel.send(msg)
+            return None 
         
             global Dfish_C
             global Dfish_E
@@ -176,7 +175,7 @@ class chatbot(discord.Client):
             # Embed 메시지 구성
             Bug_C=["배추흰나비","모기","바퀴벌레","그리마","날파리","등에","진딧물","벼룩","물벼룩","진드기","구더기","굼벵이","책벌레","곱등이","노랑나비","파리","매미허물","무당벌레","갯강구","민달팽이","지네","공벌레","쥐며느리","지렁이"]
             Bug_R=["소금쟁이","물방개","호랑나비","사마귀","고추잠자리","왕잠자리","애매미","참매미","오색나비","부르키아나나비","길앞잡이","풍뎅이","꿀벌"]
-            Bug_E=["호랑거미","긴수염대벌레","하늘소","물장군","보석풍뎅이","장수풍뎅이","사슴벌레"]
+            Bug_E=["호랑거미","긴수염대벌레","하늘소","물장군","보석풍뎅이","장수풍뎅이","사슴벌레", "꽃무지", "누에나방", "비단벌레"]
             Bug_S=["장수말벌","코카서스왕장수풍뎅이","알렉산드라제비나비","가라파톱사슴벌레","코끼리장수풍뎅이","뮤엘러리사슴벌레","엘라푸스가위사슴벌레","산누에나방","장수잠자리"]
             Bug_L=["운석","별똥별","페어리","헤라클레스 장수풍뎅이","황금 사슴벌레","와이번","드래곤","황제전갈","타란툴라","페가수스","세인트헬레나집게벌레","기간티아","유니콘"]
             Bug_T=["리리의 드론", "고고의 민들레씨", "유유의 헛된 꿈", "비행기", "우주정거장", "조화", "장수풍뎅이 모형","누군가의 소망","연"]
@@ -187,14 +186,14 @@ class chatbot(discord.Client):
             time.sleep(3)
             #1성 곤충 총 23마리
             if n>=1 and n<=30:
-                nm=random.randint(0,23)
+                nm=random.randint(0,22)
                 embed = discord.Embed(title="<채집 결과>", description="★평범한 결과에요★", color=0x00FF00)
                 embed.add_field(name="==========================", value="결과", inline=True)
                 embed.add_field(name=Bug_C[nm], value="등급 ★", inline=False)
                 embed.set_footer(text="다음엔 더 노력해봐요")
                 await channel.send(embed=embed)
 
-            #2성 물고기 총 13마리
+            #2성 곤충 총 13마리
             if n>=31 and n<=60:
                 nm=random.randint(0,12)
                 embed = discord.Embed(title="<채집 결과>", description="★오오 멋진 곤충이에요 냥★", color=0x00FF00)
@@ -203,16 +202,16 @@ class chatbot(discord.Client):
                 embed.set_footer(text="다음엔 뭐가 잡힐까요냥?")
                 await channel.send(embed=embed)
 
-            #3성 물고기 총 5마리
+            #3성 곤충 총 10마리
             if n>=61 and n<=80:
-                nm=random.randint(0,6)
+                nm=random.randint(0,9)
                 embed = discord.Embed(title="<채집 결과>", description="★희귀한 곤충을 잡았어요!★", color=0x00FF00)
                 embed.add_field(name="=====================", value="결과", inline=True)
                 embed.add_field(name=Bug_E[nm], value="등급 ★★★", inline=False)
                 embed.set_footer(text="다음엔 뭐가 잡힐까요냥?")
                 await channel.send(embed=embed)
 
-            #4성 물고기 총 9마리
+            #4성 곤충 총 9마리
             if n>=81 and n<=90:
                 nm=random.randint(0,8)
                 embed = discord.Embed(title="<채집 결과>", description="★팔면 돈이 될지도 모르겠는데요?★", color=0x00FF00)
@@ -221,7 +220,7 @@ class chatbot(discord.Client):
                 embed.set_footer(text="다음엔 뭐가 잡힐까요냥?")
                 await channel.send(embed=embed)
 
-            #5성 물고기 총 마리
+            #5성 곤충 총 13마리
             if n>=91 and n<=92:
                 nm=random.randint(0,12)
                 embed = discord.Embed(title="<채집 결과>", description="★이런 곤충은 처음봤어요 냥!★", color=0x00FF00)
@@ -230,9 +229,9 @@ class chatbot(discord.Client):
                 embed.set_footer(text="다음엔 뭐가 잡힐까요냥?")
                 await channel.send(embed=embed)
 
-            #쓰레기 총 18개
+            #쓰레기 총 9개
             if n>=93 and n<=97:
-                nm=random.randint(0,11)
+                nm=random.randint(0,8)
                 embed = discord.Embed(title="<채집 결과>", description="아 이건.. 안타깝군요..", color=0x00FF00)
                 embed.add_field(name="=====================", value="결과", inline=True)
                 embed.add_field(name=Bug_T[nm], value="등급 쓰레기", inline=False)
@@ -258,34 +257,9 @@ class chatbot(discord.Client):
                     embed.set_footer(text="우리 다시 해봐요.")
                     await channel.send(embed=embed)
                 if nm==5:
-                    embed = discord.Embed(title="<고고의 방해>", description="이새끼가 죽고싶나", color=0x00FF00)
+                    embed = discord.Embed(title="<고고의 방해>", description="장난쳐??", color=0x00FF00)
                     embed.set_footer(text="우리 다시 해봐요.")
                     await channel.send(embed=embed)
-
-
-        if message.content == "리리야 상태":
-            channel = message.channel
-            msg="<물고기 도감>"
-            await channel.send(msg)
-            msg1="1성"
-            await channel.send(msg1)
-            await channel.send(Dfish_C[0:])
-            msg2="2성"
-            await channel.send(msg2)
-            await channel.send(Dfish_R[0:])
-            msg3="3성"
-            await channel.send(msg3)
-            await channel.send(Dfish_E[0:])
-            msg4="4성"
-            await channel.send(msg4)
-            await channel.send(Dfish_S[0:])
-            msg5="5성"
-            await channel.send(msg5)
-            await channel.send(Dfish_L[0:])
-            msg6="쓰레기"
-            await channel.send(msg6)
-            await channel.send(Dfish_T)
-            await channel.send("멋진 도감이에요 냥")
 
 
 # 프로그램이 실행되면 제일 처음으로 실행되는 함수
