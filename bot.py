@@ -51,12 +51,6 @@ class chatbot(discord.Client):
             await channel.send(msg)
             return None 
 
-        if message.content == "리리야 심심해" or "리리야 놀아줘" or "리리야 놀자":
-            channel =  message.channel
-            msg="'리리야 낚시' 혹은 '리리야 잠자리채'를 입력하시면 제가 멋진 생물을 잡아올게요."
-            await channel.send(msg)
-            return None
-
         if message.content == "리리야 뭐해":
              channel = message.channel
              num=random.randint(1,3)
