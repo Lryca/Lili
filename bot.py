@@ -38,6 +38,12 @@ class chatbot(discord.Client):
             msg = "그.. 주시면 감사히받을게요냥"
             await channel.send(msg)
             return None
+
+        if message.content == "리리야 사랑해":
+            channel = message.channel
+            msg = "네?! 저..저도 사랑합니다"
+            await channel.send(msg)
+            return None
         
         if message.content == "리리야 고고가 누구야?":
             channel = message.channel
@@ -62,7 +68,7 @@ class chatbot(discord.Client):
                  asw="잠자리채를 고치고 있어요."
                  await channel.send(asw)
                  return None
-             if num==1 :
+             if num==3 :
                  asw="낚시 줄을 갈고 있어요."
                  await channel.send(asw)
                  return None  
