@@ -91,7 +91,7 @@ class chatbot(discord.Client):
             fish_T=["쓰레기","신문지","유목","그물망","고고의 박스","깡통","타이어","스티로폼","패트병","비닐봉지","리리의 털실","유유의 생선뼈","과일껍질","달걀껍질","녹슨부품","돌맹이","녹지 않은 얼음","수수깡","비닐우산"]
             n=random.randint(1,100)
             channel = message.channel
-            embed = discord.Embed(title="<낚시를 시작할게요!>", description="과연 뭐가 잡할까?", color=0x58D3F7)
+            embed = discord.Embed(title="<낚시를 시작할게요!>", description="과연 뭐가 잡힐까?", color=0x58D3F7)
             await channel.send(embed=embed)
             time.sleep(3)
             #1성 물고기 총 51마리
