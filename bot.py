@@ -232,7 +232,7 @@ class chatbot(discord.Client):
                 await channel.send(embed=embed)
 
             if n>=98 and n<=100:
-                nm=random.randint(1,5)
+                nm=random.randint(1,3)
                 if nm==1:
                     embed = discord.Embed(title="<낡은 잠자리채>", description="아..잠자리채가 부서졌어요...", color=0x00FF00)
                     embed.set_footer(text="우리 다시 해봐요.")
@@ -245,14 +245,10 @@ class chatbot(discord.Client):
                     embed = discord.Embed(title="<넘어진 리리>", description="아야.. 넘어졌어요...", color=0x00FF00)
                     embed.set_footer(text="우리 다시 해봐요.")
                     await channel.send(embed=embed)
-                if nm==4:
-                    embed = discord.Embed(title="<유유의 방해>", description="이게 미쳤나", color=0x00FF00)
-                    embed.set_footer(text="우리 다시 해봐요.")
-                    await channel.send(embed=embed)
-                if nm==5:
-                    embed = discord.Embed(title="<고고의 방해>", description="장난쳐??", color=0x00FF00)
-                    embed.set_footer(text="우리 다시 해봐요.")
-                    await channel.send(embed=embed)
+                if nm==4
+                    embed = discord.Embed(title="<낡은 잠자리채>", description="어라..? 잠자리채에 구멍이 나있어요...",color=0x00FF00)
+                    emved = set.footer(text="우리 다시 해봐요.");
+                    await chnnel.send(embed=embed)
 
     
 
